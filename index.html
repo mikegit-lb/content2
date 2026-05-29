@@ -1,4 +1,3 @@
-
 <style>
   :root {
     --ink: var(--color-text-primary);
@@ -14,44 +13,44 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: var(--font-sans); color: var(--ink); }
 
-  .doc { max-width: 800px; padding: 3rem 0 4rem; }
+  .doc { max-width: 1400px; padding: 3rem 0 4rem; margin: 0 auto; }
 
-  .byline { font-size: 15px; color: var(--muted); margin-bottom: 2rem; display: flex; align-items: center; gap: 8px; }
-  .byline span { display: inline-block; background: var(--raised); border: 0.5px solid var(--border); border-radius: 999px; padding: 4px 12px; font-size: 13px; }
+  .byline { font-size: 18px; color: var(--muted); margin-bottom: 2rem; display: flex; align-items: center; gap: 8px; }
+  .byline span { display: inline-block; background: var(--raised); border: 0.5px solid var(--border); border-radius: 999px; padding: 6px 14px; font-size: 15px; }
 
-  .alert { border-left: 3px solid #E24B4A; padding: 16px 20px; background: #FCEBEB; border-radius: 0 var(--r-md) var(--r-md) 0; margin-bottom: 2rem; font-size: 16px; color: #501313; line-height: 1.6; }
+  .alert { border-left: 3px solid #E24B4A; padding: 16px 20px; background: #FCEBEB; border-radius: 0 var(--r-md) var(--r-md) 0; margin-bottom: 2rem; font-size: 18px; color: #501313; line-height: 1.6; }
   .alert strong { font-weight: 500; }
 
-  h1 { font-size: 28px; font-weight: 500; margin-bottom: 8px; line-height: 1.3; }
-  h2 { font-size: 22px; font-weight: 500; margin: 2.5rem 0 1rem; padding-bottom: 10px; border-bottom: 0.5px solid var(--border); }
-  h3 { font-size: 18px; font-weight: 500; margin: 1.5rem 0 0.75rem; color: var(--ink); }
-  p { font-size: 16px; line-height: 1.8; color: var(--muted); margin-bottom: 1rem; }
+  h1 { font-size: 36px; font-weight: 500; margin-bottom: 8px; line-height: 1.3; }
+  h2 { font-size: 28px; font-weight: 500; margin: 2.5rem 0 1rem; padding-bottom: 10px; border-bottom: 0.5px solid var(--border); }
+  h3 { font-size: 22px; font-weight: 500; margin: 1.5rem 0 0.75rem; color: var(--ink); }
+  p { font-size: 18px; line-height: 1.8; color: var(--muted); margin-bottom: 1rem; }
 
   .band-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 2rem; }
-  .band-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 16px 18px; }
-  .band-card .label { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
-  .band-card .value { font-size: 26px; font-weight: 500; }
-  .band-card .sub { font-size: 14px; color: var(--muted); margin-top: 4px; }
+  .band-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 20px 22px; }
+  .band-card .label { font-size: 15px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+  .band-card .value { font-size: 32px; font-weight: 500; }
+  .band-card .sub { font-size: 16px; color: var(--muted); margin-top: 4px; }
   .band-card.highlight { border-color: #185FA5; background: #E6F1FB; }
   .band-card.highlight .value { color: #185FA5; }
 
   .principle-list { list-style: none; margin-bottom: 1.5rem; }
-  .principle-list li { font-size: 16px; line-height: 1.75; color: var(--muted); padding: 9px 0 9px 28px; border-bottom: 0.5px solid var(--border); position: relative; }
+  .principle-list li { font-size: 18px; line-height: 1.75; color: var(--muted); padding: 9px 0 9px 28px; border-bottom: 0.5px solid var(--border); position: relative; }
   .principle-list li:last-child { border-bottom: none; }
   .principle-list li::before { content: ""; position: absolute; left: 0; top: 18px; width: 8px; height: 8px; border-radius: 50%; background: #185FA5; }
   .principle-list li strong { color: var(--ink); font-weight: 500; }
 
   .week-block { border: 0.5px solid var(--border); border-radius: var(--r-lg); overflow: hidden; margin-bottom: 1.5rem; }
-  .week-header { display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: var(--raised); border-bottom: 0.5px solid var(--border); cursor: pointer; user-select: none; }
-  .week-num { font-size: 12px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; background: var(--surface); border: 0.5px solid var(--border); border-radius: 4px; padding: 4px 10px; }
-  .week-title { font-size: 17px; font-weight: 500; flex: 1; }
-  .week-theme { font-size: 14px; color: var(--muted); }
-  .week-chevron { font-size: 18px; color: var(--muted); transition: transform 0.2s; }
-  .week-body { padding: 20px; display: none; }
+  .week-header { display: flex; align-items: center; gap: 14px; padding: 20px 24px; background: var(--raised); border-bottom: 0.5px solid var(--border); cursor: pointer; user-select: none; }
+  .week-num { font-size: 13px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; background: var(--surface); border: 0.5px solid var(--border); border-radius: 4px; padding: 6px 10px; }
+  .week-title { font-size: 19px; font-weight: 500; flex: 1; }
+  .week-theme { font-size: 16px; color: var(--muted); }
+  .week-chevron { font-size: 20px; color: var(--muted); transition: transform 0.2s; }
+  .week-body { padding: 24px; display: none; }
   .week-body.open { display: block; }
 
-  .skill-row { display: grid; grid-template-columns: 130px 1fr; gap: 14px; margin-bottom: 18px; align-items: start; }
-  .skill-tag { font-size: 12px; font-weight: 500; border-radius: 4px; padding: 5px 10px; text-align: center; white-space: nowrap; }
+  .skill-row { display: grid; grid-template-columns: 150px 1fr; gap: 16px; margin-bottom: 20px; align-items: start; }
+  .skill-tag { font-size: 13px; font-weight: 500; border-radius: 4px; padding: 6px 12px; text-align: center; white-space: nowrap; }
   .tag-r { background: #E1F5EE; color: #0F6E56; }
   .tag-w { background: #E6F1FB; color: #185FA5; }
   .tag-l { background: #FAEEDA; color: #854F0B; }
@@ -59,50 +58,50 @@
   .tag-v { background: #EEEDFE; color: #534AB7; }
   .tag-g { background: #F1EFE8; color: #5F5E5A; }
 
-  .skill-content { font-size: 15px; line-height: 1.75; color: var(--muted); }
+  .skill-content { font-size: 17px; line-height: 1.75; color: var(--muted); }
   .skill-content strong { color: var(--ink); font-weight: 500; }
 
   .daily-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin: 1.5rem 0; }
-  .day-col { background: var(--raised); border-radius: var(--r-md); padding: 12px 8px; text-align: center; }
-  .day-name { font-size: 12px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
-  .day-block { font-size: 12px; line-height: 1.5; color: var(--muted); background: var(--surface); border-radius: 3px; padding: 6px 4px; margin-bottom: 6px; border: 0.5px solid var(--border); }
+  .day-col { background: var(--raised); border-radius: var(--r-md); padding: 14px 10px; text-align: center; }
+  .day-name { font-size: 14px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
+  .day-block { font-size: 14px; line-height: 1.5; color: var(--muted); background: var(--surface); border-radius: 3px; padding: 8px 6px; margin-bottom: 6px; border: 0.5px solid var(--border); }
   .day-block.rest { color: var(--hint); background: transparent; border-color: transparent; }
-  .day-hrs { font-size: 11px; color: var(--hint); margin-top: 6px; }
+  .day-hrs { font-size: 12px; color: var(--hint); margin-top: 6px; }
 
   .resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 1.5rem; }
-  .resource-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 16px 18px; }
-  .resource-card .r-type { font-size: 12px; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
-  .resource-card .r-name { font-size: 16px; font-weight: 500; margin-bottom: 4px; }
-  .resource-card .r-note { font-size: 14px; color: var(--muted); line-height: 1.6; }
+  .resource-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 18px 20px; }
+  .resource-card .r-type { font-size: 13px; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .resource-card .r-name { font-size: 18px; font-weight: 500; margin-bottom: 4px; }
+  .resource-card .r-note { font-size: 16px; color: var(--muted); line-height: 1.6; }
 
   .strat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 1.5rem; }
-  .strat-card { border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 16px 18px; }
-  .strat-card h4 { font-size: 15px; font-weight: 500; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+  .strat-card { border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 18px 20px; }
+  .strat-card h4 { font-size: 17px; font-weight: 500; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
   .strat-card ul { list-style: none; }
-  .strat-card ul li { font-size: 14px; color: var(--muted); line-height: 1.75; padding-left: 18px; position: relative; }
+  .strat-card ul li { font-size: 16px; color: var(--muted); line-height: 1.75; padding-left: 18px; position: relative; }
   .strat-card ul li::before { content: "–"; position: absolute; left: 0; color: var(--hint); }
 
-  .assess-table { width: 100%; border-collapse: collapse; font-size: 15px; margin-top: 1rem; }
-  .assess-table th { text-align: left; font-weight: 500; font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; padding: 8px 12px; border-bottom: 0.5px solid var(--border); }
-  .assess-table td { padding: 11px 12px; border-bottom: 0.5px solid var(--border); color: var(--muted); vertical-align: top; }
+  .assess-table { width: 100%; border-collapse: collapse; font-size: 16px; margin-top: 1rem; }
+  .assess-table th { text-align: left; font-weight: 500; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; padding: 10px 14px; border-bottom: 0.5px solid var(--border); }
+  .assess-table td { padding: 13px 14px; border-bottom: 0.5px solid var(--border); color: var(--muted); vertical-align: top; }
   .assess-table td:first-child { font-weight: 500; color: var(--ink); white-space: nowrap; }
   .assess-table tr:last-child td { border-bottom: none; }
 
-  .target-bar { display: flex; align-items: center; gap: 14px; margin: 12px 0; }
-  .target-label { font-size: 14px; color: var(--muted); min-width: 100px; }
-  .bar-track { flex: 1; height: 8px; background: var(--raised); border-radius: 4px; overflow: hidden; border: 0.5px solid var(--border); }
+  .target-bar { display: flex; align-items: center; gap: 14px; margin: 14px 0; }
+  .target-label { font-size: 16px; color: var(--muted); min-width: 110px; }
+  .bar-track { flex: 1; height: 10px; background: var(--raised); border-radius: 4px; overflow: hidden; border: 0.5px solid var(--border); }
   .bar-fill { height: 100%; border-radius: 4px; }
-  .target-score { font-size: 14px; font-weight: 500; min-width: 35px; text-align: right; }
+  .target-score { font-size: 16px; font-weight: 500; min-width: 40px; text-align: right; }
 
-  .warn-box { background: #FAEEDA; border: 0.5px solid #EF9F27; border-radius: var(--r-md); padding: 16px 18px; margin-top: 2rem; }
-  .warn-box p { font-size: 15px; color: #633806; margin: 0; line-height: 1.75; }
+  .warn-box { background: #FAEEDA; border: 0.5px solid #EF9F27; border-radius: var(--r-md); padding: 18px 20px; margin-top: 2rem; }
+  .warn-box p { font-size: 17px; color: #633806; margin: 0; line-height: 1.75; }
   .warn-box strong { color: #412402; font-weight: 500; }
 </style>
 
 <div class="doc">
   <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">IELTS Academic Band 6.5 to Band 8: 8-Week Intensive Curriculum by Dr. Ellis</h2>
 
-  <p style="font-size:15px; color:var(--muted); margin-bottom:8px;">IELTS Academic Intensive Curriculum</p>
+  <p style="font-size:18px; color:var(--muted); margin-bottom:8px;">IELTS Academic Intensive Curriculum</p>
   <h1>Band 6.5 → Band 8 in 8 Weeks</h1>
   <div class="byline">
     <span>Dr. Ellis, PhD Applied Linguistics</span>
@@ -111,7 +110,7 @@
   </div>
 
   <div class="alert">
-    <strong>Honest expectation-setting.</strong> A 1.5-band gain in 8 weeks is ambitious but achievable with disciplined daily practice (~3 hours), consistent mock testing, and corrective feedback. This curriculum assumes you're already at Band 6.5 and looking to break into the 7.5–8.0 range.
+    <strong>Honest expectation-setting.</strong> A 1.5-band gain in 8 weeks is ambitious but achievable with disciplined daily practice (~3 hours), consistent mock testing, and corrective feedback. The most common reason for plateau: insufficient time in exam-condition mock tests. Solutions: track every mock score; analyse error patterns weekly; prioritise the skill with the lowest band.
   </div>
 
   <div class="band-grid">
@@ -142,18 +141,18 @@
   <div class="target-bar"><span class="target-label">Reading</span><div class="bar-track"><div class="bar-fill" style="width:80%; background:#185FA5;"></div></div><span class="target-score" style="color:#185FA5;">8.0</span></div>
   <div class="target-bar"><span class="target-label">Writing</span><div class="bar-track"><div class="bar-fill" style="width:72%; background:#993556;"></div></div><span class="target-score" style="color:#993556;">7.5</span></div>
   <div class="target-bar"><span class="target-label">Speaking</span><div class="bar-track"><div class="bar-fill" style="width:75%; background:#534AB7;"></div></div><span class="target-score" style="color:#534AB7;">7.5</span></div>
-  <p style="font-size:14px; color:var(--hint); margin-top:8px;">Writing and Speaking band 7.5 averages to overall 8.0 alongside Listening/Reading 8.0. Writing Band 8 is possible with consistent work and specialist tutor feedback.</p>
+  <p style="font-size:16px; color:var(--hint); margin-top:8px;">Writing and Speaking band 7.5 averages to overall 8.0 alongside Listening/Reading 8.0. Writing Band 8 is possible with consistent work and expert feedback.</p>
 
   <h2>Guiding principles</h2>
   <p>Every session applies evidence-based learning science to maximise retention and transfer under exam conditions.</p>
   <ul class="principle-list">
-    <li><strong>Retrieval practice over re-study (Roediger & Karpicke 2006).</strong> Every session ends with a self-test activity — cover the notes, recall the rules, reproduce vocabulary from memory.</li>
+    <li><strong>Retrieval practice over re-study (Roediger & Karpicke 2006).</strong> Every session ends with a self-test activity — cover the notes, recall the rules, reproduce vocabulary from memory. Do not re-read notes passively.</li>
     <li><strong>Spaced repetition (Ebbinghaus; Kornell & Bjork 2008).</strong> Vocabulary and grammar targets are recycled at day 1 → day 3 → day 7 → day 14 intervals using Anki. Never cram.</li>
     <li><strong>Interleaving (Taylor & Rohrer 2010).</strong> Practice sessions mix question types and task formats rather than blocking one type. Feels harder; produces dramatically better exam transfer.</li>
     <li><strong>Processing Instruction (VanPatten 1996).</strong> Grammar forms are first processed in meaningful reading/listening input before production drills. Ensures deep form-meaning mapping.</li>
-    <li><strong>Comprehensible input at i+1 (Krashen 1982).</strong> All reading and listening texts are pitched slightly above current competence — authentic C1 materials, not IELTS coursebook simplified texts.</li>
+    <li><strong>Comprehensible input at i+1 (Krashen 1982).</strong> All reading and listening texts are pitched slightly above current competence — authentic C1 materials, not IELTS coursebook simplifications.</li>
     <li><strong>Noticing Hypothesis (Schmidt 1990).</strong> Explicit attention to target forms in authentic texts is required. Passive exposure without noticing does not produce measurable gains.</li>
-    <li><strong>Genre-Based Writing (Cope & Kalantzis 1993; Rose & Martin 2012).</strong> Model → deconstruct → jointly construct → independent production. Every Task 1 and Task 2 type is modelled extensively.</li>
+    <li><strong>Genre-Based Writing (Cope & Kalantzis 1993; Rose & Martin 2012).</strong> Model → deconstruct → jointly construct → independent production. Every Task 1 and Task 2 type is modelled before unseen practice.</li>
     <li><strong>Affective Filter (Krashen 1982).</strong> High-stakes exam anxiety suppresses performance. Timed mock conditions are introduced gradually; mindset-building is woven into the programme.</li>
   </ul>
 
@@ -163,7 +162,7 @@
   <div id="weeks-container"></div>
 
   <h2>Daily study strategy</h2>
-  <p>Each day is divided into three blocks. The 21-day habit formation principle (Lally et al. 2010) is applied: same time, same location, same sequence reduces activation cost and builds automaticity.</p>
+  <p>Each day is divided into three blocks. The 21-day habit formation principle (Lally et al. 2010) is applied: same time, same location, same sequence reduces activation cost and builds automaticity in study routines.</p>
   <div class="daily-grid">
     <div class="day-col">
       <div class="day-name">Mon</div>
@@ -274,7 +273,7 @@
   <h2>Study strategy: what separates 7.0 from 8.0</h2>
   <div class="strat-grid">
     <div class="strat-card">
-      <h4><i class="ti ti-pencil" aria-hidden="true" style="font-size:18px; color:#185FA5;"></i> Writing</h4>
+      <h4><i class="ti ti-pencil" aria-hidden="true" style="font-size:20px; color:#185FA5;"></i> Writing</h4>
       <ul>
         <li>Task 1: lead with an overview in sentence 2 — examiners report this is the most common Band 7 failure</li>
         <li>Task 2: avoid 5-paragraph essay; use 4-paragraph PEEL structure with clearly signalled argument progression</li>
@@ -284,7 +283,7 @@
       </ul>
     </div>
     <div class="strat-card">
-      <h4><i class="ti ti-microphone" aria-hidden="true" style="font-size:18px; color:#993556;"></i> Speaking</h4>
+      <h4><i class="ti ti-microphone" aria-hidden="true" style="font-size:20px; color:#993556;"></i> Speaking</h4>
       <ul>
         <li>Fluency: eliminate filler words ("you know", "like") — replace with pause + collect strategy</li>
         <li>Lexical resource: use idiomatic expressions naturally, not forced (examiners detect rehearsed phrases)</li>
@@ -294,7 +293,7 @@
       </ul>
     </div>
     <div class="strat-card">
-      <h4><i class="ti ti-book" aria-hidden="true" style="font-size:18px; color:#0F6E56;"></i> Reading</h4>
+      <h4><i class="ti ti-book" aria-hidden="true" style="font-size:20px; color:#0F6E56;"></i> Reading</h4>
       <ul>
         <li>Time management: allocate exactly 20 min per passage — wear a watch</li>
         <li>True/False/Not Given: "Not Given" means the text neither confirms nor denies — never infer beyond the text</li>
@@ -304,7 +303,7 @@
       </ul>
     </div>
     <div class="strat-card">
-      <h4><i class="ti ti-headphones" aria-hidden="true" style="font-size:18px; color:#854F0B;"></i> Listening</h4>
+      <h4><i class="ti ti-headphones" aria-hidden="true" style="font-size:20px; color:#854F0B;"></i> Listening</h4>
       <ul>
         <li>Predict: read questions before audio plays — predict word class and semantic field of answer</li>
         <li>Sections 3 and 4 are hardest — allocate maximum focus here</li>
@@ -316,7 +315,7 @@
   </div>
 
   <div class="warn-box">
-    <p><strong>Self-regulated learning commitment.</strong> This curriculum only works if you maintain a study log. At the end of every session, write three sentences: what you studied, what you learned, and what challenged you. Review your log weekly.</p>
+    <p><strong>Self-regulated learning commitment.</strong> This curriculum only works if you maintain a study log. At the end of every session, write three sentences: what you studied, what you learned, and what you'll change next session. This metacognitive habit is non-negotiable.</p>
   </div>
 </div>
 
@@ -325,89 +324,89 @@ const weeks = [
   {
     num: "Week 1", title: "Diagnostic & Foundation Building", theme: "Know your baseline — build the scaffold",
     skills: [
-      { tag: "tag-r", label: "Reading", content: "<strong>Diagnostic full test</strong> (Day 1, timed). Analyse errors by category: True/False/NG, Matching, Sentence Completion. Identify the 2 question types causing most loss. Read the Band Descriptor (IELTS.org) to locate the specific skill gap: speed? inference? vocabulary recognition?" },
-      { tag: "tag-w", label: "Writing", content: "<strong>Genre deconstruction</strong> of 2 Band 8–9 Task 1 (line graph + bar chart) and 2 Task 2 (argument + discussion) exemplars. Annotate for: overview placement, tense use, article accuracy, connector variety, lexical sophistication (synonym mapping)." },
-      { tag: "tag-l", label: "Listening", content: "<strong>Diagnostic test</strong> (Day 1). Identify: Sections losing most marks, spelling vs. comprehension errors (these require different interventions), accent/accent familiarity gaps, speed of processing." },
-      { tag: "tag-s", label: "Speaking", content: "<strong>Self-record</strong> a Part 1, Part 2, and Part 3 response. Transcribe Part 2 (builds accuracy awareness). Self-code errors: [G] grammar, [V] vocabulary, [C] coherence, [R] repetition. This becomes your baseline comparison in Week 8." },
-      { tag: "tag-v", label: "Vocabulary", content: "Create Anki deck. Add 15 words/day from AWL (Academic Word List). For each word: definition, 2 collocations, 1 example in academic sentence. Daily review: 5 min. Add to Spaced Repetition schedule: Day 1, 3, 7, 14." },
-      { tag: "tag-g", label: "Grammar", content: "Error analysis of diagnostic writing: categorise all errors using [G][WO][S] codes (subject-verb agreement, word order, syntax). Identify top 3 recurring error types — these become Week 2–3 targets. Consult Cambridge Grammar of English for each." }
+      { tag: "tag-r", label: "Reading", content: "<strong>Diagnostic full test</strong> (Day 1, timed). Analyse errors by category: True/False/NG, Matching, Sentence Completion. Identify the 2 question types causing most misses. Map the error to root cause: (a) vocabulary gap, (b) skimmed too fast, (c) inference error, (d) distractor trap." },
+      { tag: "tag-w", label: "Writing", content: "<strong>Genre deconstruction</strong> of 2 Band 8–9 Task 1 (line graph + bar chart) and 2 Task 2 (argument + discussion) exemplars. Annotate for: overview position, lexical sophistication, cohesion signal words, grammatical complexity, punctuation choices." },
+      { tag: "tag-l", label: "Listening", content: "<strong>Diagnostic test</strong> (Day 1). Identify: Sections losing most marks, spelling vs. comprehension errors (these require different interventions). Transcribe Section 4 to diagnose phoneme discrimination problems." },
+      { tag: "tag-s", label: "Speaking", content: "<strong>Self-record</strong> a Part 1, Part 2, and Part 3 response. Transcribe Part 2 (builds accuracy awareness). Self-code errors: [G] grammar, [V] vocabulary, [C] coherence, [P] pronunciation. Aim to notice, not judge." },
+      { tag: "tag-v", label: "Vocabulary", content: "Create Anki deck. Add 15 words/day from AWL (Academic Word List). For each word: definition, 2 collocations, 1 example in academic sentence. Daily review target: 15 min." },
+      { tag: "tag-g", label: "Grammar", content: "Error analysis of diagnostic writing: categorise all errors using [G][WO][S] codes (subject-verb agreement, word order, syntax). Identify top 3 recurring patterns. Week 1 focus: subject-verb agreement drills." }
     ]
   },
   {
     num: "Week 2", title: "Writing Task 1 Mastery", theme: "Data interpretation + academic register",
     skills: [
-      { tag: "tag-w", label: "Writing T1", content: "<strong>Systematic Task 1 genre instruction.</strong> Study 5 graph types over 5 days: line graph → bar chart → pie chart → table → process diagram. For each type: memorise 3-sentence opening frame, 3 body patterns, 1 closing. Write 1 graph daily timed (20 min)." },
-      { tag: "tag-r", label: "Reading", content: "Focus on <strong>True/False/Not Given</strong> (highest Band 6–7 failure point). Daily: 1 TF/NG set under timed conditions. Debrief: distinguish inference (True) from beyond-text assumption (Not Given). Read statements carefully — negation markers undo meaning." },
-      { tag: "tag-l", label: "Listening", content: "<strong>Section 3 and 4 focus.</strong> These are academic discussion and monologue formats — hardest sections. Practice: listen once, answer without pause. If >2 errors per section: pause and transcribe the section to identify vocabulary or grammar speed barrier." },
-      { tag: "tag-s", label: "Speaking", content: "<strong>Part 2 fluency development.</strong> Use 1-minute preparation for mind-mapping (WHO / WHAT / WHEN / WHERE / HOW-FEEL). Record 5 Part 2 responses daily. Self-transcribe and identify pauses >2 sec: these reveal vocabulary retrieval failure or structural planning breakdown." },
-      { tag: "tag-v", label: "Vocabulary", content: "Theme: <strong>data language</strong> for Task 1. Master: verbs of change (surge, plummet, level off, fluctuate), nouns (peak, trough, upward trend), and degree modifiers (considerably, significantly, marginally). Review daily 10 min." },
-      { tag: "tag-g", label: "Grammar", content: "Focus: <strong>passive constructions and nominal groups</strong> — critical for academic writing register. Practice converting active → passive: \"The survey showed a 30% increase\" → \"A 30% increase was shown by the survey.\" Daily drills 15 min." }
+      { tag: "tag-w", label: "Writing T1", content: "<strong>Systematic Task 1 genre instruction.</strong> Study 5 graph types over 5 days: line graph → bar chart → pie chart → table → process diagram. Each day: (1) model deconstruction, (2) overview brainstorm, (3) timed write (20 min)." },
+      { tag: "tag-r", label: "Reading", content: "Focus on <strong>True/False/Not Given</strong> (highest Band 6–7 failure point). Daily: 1 TF/NG set under timed conditions. Debrief: distinguish inference-required vs. text-explicit questions. Mark every instance of hedging language." },
+      { tag: "tag-l", label: "Listening", content: "<strong>Section 3 and 4 focus.</strong> These are academic discussion and monologue formats — hardest sections. Practice: listen once, answer without replaying. Use question-prediction strategy before audio." },
+      { tag: "tag-s", label: "Speaking", content: "<strong>Part 2 fluency development.</strong> Use 1-minute preparation for mind-mapping (WHO / WHAT / WHEN / WHERE / HOW-FEEL). Record 5 Part 2 responses. Target: minimal hesitation, no 'um'." },
+      { tag: "tag-v", label: "Vocabulary", content: "Theme: <strong>data language</strong> for Task 1. Master: verbs of change (surge, plummet, level off, fluctuate), nouns (peak, trough, upward trend, plateau), prepositions (between X and Y, from X to Y)." },
+      { tag: "tag-g", label: "Grammar", content: "Focus: <strong>passive constructions and nominal groups</strong> — critical for academic writing register. Practice converting active → passive: 'Sales increased' → 'An increase in sales was observed.'" }
     ]
   },
   {
     num: "Week 3", title: "Writing Task 2 Mastery", theme: "Argument construction + lexical sophistication",
     skills: [
-      { tag: "tag-w", label: "Writing T2", content: "<strong>Systematic Task 2 genre instruction.</strong> Study 5 essay types: discussion → opinion → problem-solution → two-part question → double-prompt. Memorise 4-paragraph PEEL structure for each. Write 1 full Task 2 daily (timed: 40 min)." },
-      { tag: "tag-r", label: "Reading", content: "Focus: <strong>Summary / Sentence Completion / Short Answer</strong> question types. Key skill: locating specific information rapidly under time pressure. Daily: 1 mixed-type set. Debrief: did you over-read? under-infer? Increase scan speed." },
-      { tag: "tag-l", label: "Listening", content: "<strong>Spelling accuracy drill.</strong> Common IELTS spelling errors: British English (colour/colour, centre/centre); -ise/-ize (organise); -ous (anonymous). Create 50-word spelling flashcards. Daily 5 min." },
-      { tag: "tag-s", label: "Speaking", content: "<strong>Part 3 academic discussion.</strong> Part 3 targets: grammatical range, lexical resource, extended reasoning. Practice: respond to 10 abstract questions using conditional and nominalization. Record and self-assess for grammar range variety." },
-      { tag: "tag-v", label: "Vocabulary", content: "Theme: <strong>academic stance and hedging</strong>. Master: epistemic modality (it is widely argued, evidence suggests, critics contend), connectives (nonetheless, conversely, thereby), and hedge phrases (arguably, to a large extent). Daily review 10 min." },
-      { tag: "tag-g", label: "Grammar", content: "Focus: <strong>complex noun phrases (nominalization) and relative clauses.</strong> Nominalization converts verbs/adjectives to nouns for academic concision: \"if companies reduce waste\" → \"waste reduction by companies\". Drills: 20 min daily." }
+      { tag: "tag-w", label: "Writing T2", content: "<strong>Systematic Task 2 genre instruction.</strong> Study 5 essay types: discussion → opinion → problem-solution → two-part question → advantage-disadvantage. Each: model study, essay plan, timed write (40 min)." },
+      { tag: "tag-r", label: "Reading", content: "Focus: <strong>Summary / Sentence Completion / Short Answer</strong> question types. Key skill: locating specific information rapidly under time pressure. Daily: practise skimming and scanning for target vocabulary." },
+      { tag: "tag-l", label: "Listening", content: "<strong>Spelling accuracy drill.</strong> Common IELTS spelling errors: British English (colour/colour, centre/centre); -ise/-ize (organise); -ous (conscious). Write 20 words from audio dictation daily." },
+      { tag: "tag-s", label: "Speaking", content: "<strong>Part 3 academic discussion.</strong> Part 3 targets: grammatical range, lexical resource, extended reasoning. Practice: respond to 10 abstract questions; record and self-assess against 'range' criteria." },
+      { tag: "tag-v", label: "Vocabulary", content: "Theme: <strong>academic stance and hedging</strong>. Master: epistemic modality (it is widely argued, evidence suggests, critics contend), connectives (although, whereas, despite this)." },
+      { tag: "tag-g", label: "Grammar", content: "Focus: <strong>complex noun phrases (nominalization) and relative clauses.</strong> Nominalization converts verbs/adjectives to nouns for academic register: 'The fact that crime increased' → 'An increase in crime.'" }
     ]
   },
   {
     num: "Week 4", title: "Reading Speed & Accuracy", theme: "Strategy consolidation + timing discipline",
     skills: [
-      { tag: "tag-r", label: "Reading", content: "<strong>Full reading paper timed practice</strong> every day this week (3 passages, 60 min total). Debrief protocol: mark answers → categorise errors (vocabulary gap, inference error, careless misread, time pressure). Improve 1 error category per day." },
-      { tag: "tag-w", label: "Writing", content: "Receive <strong>written corrective feedback</strong> on Weeks 2–3 essays (from teacher/examiner/AI). Apply the error coding system. Rewrite 1 Task 1 and 1 Task 2 with corrections." },
-      { tag: "tag-l", label: "Listening", content: "<strong>Top-down strategy development.</strong> Before each recording: read all questions; predict topic, speaker relationship, and likely vocabulary. Activate prior knowledge. Then listen. Compare predictions to reality." },
-      { tag: "tag-s", label: "Speaking", content: "<strong>Lexical resource focus.</strong> Examiners assess whether you can say the same thing multiple different ways. Practice: express each concept using 3 different structures. Record and compare naturalness." },
-      { tag: "tag-v", label: "Vocabulary", content: "Theme: <strong>environment, technology, globalisation</strong> (highest-frequency IELTS topic fields). Learn 15 words per theme. For each: definition, 2 collocations, 1 example in academic sentence context." },
-      { tag: "tag-g", label: "Grammar", content: "Focus: <strong>conditional structures</strong> (Types 1, 2, 3 and mixed) — essential for Task 2 argument and Speaking Part 3 speculation. Production drills: generate 10 sentences for each conditional type. Target naturalness." }
+      { tag: "tag-r", label: "Reading", content: "<strong>Full reading paper timed practice</strong> every day this week (3 passages, 60 min total). Debrief protocol: mark answers → categorise error type (vocabulary, inference, time pressure, careless)." },
+      { tag: "tag-w", label: "Writing", content: "Receive <strong>written corrective feedback</strong> on Weeks 2–3 essays (from teacher/examiner/AI). Apply the error coding system. Rewrite 1 Task 1 and 1 Task 2 incorporating all feedback." },
+      { tag: "tag-l", label: "Listening", content: "<strong>Top-down strategy development.</strong> Before each recording: read all questions; predict topic, speaker relationship, and likely vocabulary. After listening: identify where prediction succeeded or failed." },
+      { tag: "tag-s", label: "Speaking", content: "<strong>Lexical resource focus.</strong> Examiners assess whether you can say the same thing multiple different ways. Practice: express each concept in 3 different ways (synonym, paraphrase, longer phrase)." },
+      { tag: "tag-v", label: "Vocabulary", content: "Theme: <strong>environment, technology, globalisation</strong> (highest-frequency IELTS topic fields). Learn 15 words per theme. For each: definition + 2 collocations." },
+      { tag: "tag-g", label: "Grammar", content: "Focus: <strong>conditional structures</strong> (Types 1, 2, 3 and mixed) — essential for Task 2 argument and Speaking Part 3 speculation. Production: write 10 conditional sentences daily." }
     ]
   },
   {
     num: "Week 5", title: "Listening Precision & Speaking Fluency", theme: "Automaticity under pressure",
     skills: [
-      { tag: "tag-l", label: "Listening", content: "<strong>Full listening paper daily</strong> (40 questions, 30 min). Debrief: classify errors as (a) didn't hear → pronunciation training; (b) heard but didn't understand → vocabulary; (c) understood but misidentified answer → strategy refinement." },
-      { tag: "tag-s", label: "Speaking", content: "<strong>Pronunciation and suprasegmentals.</strong> Target: word stress placement, sentence stress (content vs. function words), connected speech (assimilation, elision, linking). Record 5 Part 1 responses; self-rate prosody 1–10." },
-      { tag: "tag-r", label: "Reading", content: "Focus on <strong>Matching Information and Matching Features</strong> — question types that require whole-text scanning, not local search. Strategy: underline key terms before reading; scan actively." },
-      { tag: "tag-w", label: "Writing", content: "<strong>Coherence and cohesion deep-dive.</strong> At Band 7, the most common cohesion error is over-reliance on 'Furthermore / Moreover / However'. Study alternative connectives: conversely, nonetheless, paradoxically, concurrently. Rewrite Week 2–3 essays using varied connectives." },
-      { tag: "tag-v", label: "Vocabulary", content: "Theme: <strong>health, society, crime, work</strong>. Focus on <strong>collocational range</strong> — can you produce 3 natural collocations per word? E.g. 'commit crime' vs. 'perpetrate crime' vs. 'engage in crime'. Collocation drills 15 min daily." },
-      { tag: "tag-g", label: "Grammar", content: "Focus: <strong>articles (a/an/the/zero) and quantifiers.</strong> The most common grammar error in advanced IELTS writing. Rules: definite article for unique entities ('the sun'), indefinite for new information ('a study showed'). Daily error-correction drills 15 min." }
+      { tag: "tag-l", label: "Listening", content: "<strong>Full listening paper daily</strong> (40 questions, 30 min). Debrief: classify errors as (a) didn't hear → pronunciation training; (b) heard but misidentified → word discrimination; (c) comprehension gap." },
+      { tag: "tag-s", label: "Speaking", content: "<strong>Pronunciation and suprasegmentals.</strong> Target: word stress placement, sentence stress (content vs. function words), connected speech (assimilation, elision). Record and compare to native model." },
+      { tag: "tag-r", label: "Reading", content: "Focus on <strong>Matching Information and Matching Features</strong> — question types that require whole-text scanning, not local search. Strategy: scan for paraphrased versions of question key words." },
+      { tag: "tag-w", label: "Writing", content: "<strong>Coherence and cohesion deep-dive.</strong> At Band 7, the most common cohesion error is over-reliance on 'Furthermore / Moreover / However'. Strategy: use rhetorical moves instead (signal problem, offer solution)." },
+      { tag: "tag-v", label: "Vocabulary", content: "Theme: <strong>health, society, crime, work</strong>. Focus on <strong>collocational range</strong> — can you produce 3 natural collocations per word? (e.g., 'increase' → rise sharply, climb steadily, surge unexpectedly)." },
+      { tag: "tag-g", label: "Grammar", content: "Focus: <strong>articles (a/an/the/zero) and quantifiers.</strong> The most common grammar error in advanced IELTS writing. Diagnostic: identify your article errors from Weeks 1–4 writing." }
     ]
   },
   {
     num: "Week 6", title: "Integrated Skills & Mock Exam Cycle", theme: "Simulate, analyse, improve — repeat",
     skills: [
-      { tag: "tag-r", label: "All skills", content: "<strong>Full mock exam every Saturday</strong> under strict timed exam conditions. This week: additionally run a <strong>mid-week half-mock</strong> (Listening + Reading only, 80 min) to diagnose speed/accuracy trade-off." },
-      { tag: "tag-w", label: "Writing", content: "<strong>Task 1: mixed data sources.</strong> Practise double-graph tasks (e.g. line graph + pie chart). Strategy: write 1 overview that summarises both; write 2 body paragraphs comparing. Time yourself: 20 min max." },
-      { tag: "tag-l", label: "Listening", content: "<strong>Error pattern consolidation.</strong> Review all 6 weeks of listening practice. What are your 3 most frequent error types? Design a self-study protocol targeting only those 3 patterns. Daily 20 min focused practice." },
-      { tag: "tag-s", label: "Speaking", content: "<strong>Full mock speaking test.</strong> Record all 3 parts. Self-assess against 4 Band descriptors (fluency, lexical resource, grammatical range, pronunciation). Key Band 7→8 gap in speaking: examiners want extended, complex sentences, not rehearsed phrases." },
-      { tag: "tag-v", label: "Vocabulary", content: "Vocabulary consolidation week. No new word fields — instead: <strong>production audit.</strong> Without looking at Anki, produce from memory 2 collocations for each word learned in Weeks 1–5. If retrieval fails, move card to daily review." },
-      { tag: "tag-g", label: "Grammar", content: "<strong>Grammar accuracy review.</strong> Compile all grammar errors from Weeks 1–5 writing feedback. Rank by frequency. The top 2 error types now become your daily drill focus: 20 min/day production practice." }
+      { tag: "tag-r", label: "All skills", content: "<strong>Full mock exam every Saturday</strong> under strict timed exam conditions. This week: additionally run a <strong>mid-week half-mock</strong> (Reading + Writing only, 90 min). Compare band trajectory." },
+      { tag: "tag-w", label: "Writing", content: "<strong>Task 1: mixed data sources.</strong> Practise double-graph tasks (e.g. line graph + pie chart). Strategy: write 1 overview that summarises both graphs before detailing each." },
+      { tag: "tag-l", label: "Listening", content: "<strong>Error pattern consolidation.</strong> Review all 6 weeks of listening practice. What are your 3 most frequent error types? Design a self-study intervention for each." },
+      { tag: "tag-s", label: "Speaking", content: "<strong>Full mock speaking test.</strong> Record all 3 parts. Self-assess against 4 Band descriptors (fluency, lexical resource, grammatical range, pronunciation). Transcribe and code errors." },
+      { tag: "tag-v", label: "Vocabulary", content: "Vocabulary consolidation week. No new word fields — instead: <strong>production audit.</strong> Without looking at Anki, produce from memory 2 collocations for each word from Weeks 1–5." },
+      { tag: "tag-g", label: "Grammar", content: "<strong>Grammar accuracy review.</strong> Compile all grammar errors from Weeks 1–5 writing feedback. Rank by frequency. The top 2 error types now become targeted drills (5 min daily)." }
     ]
   },
   {
     num: "Week 7", title: "Peak Performance Conditioning", theme: "Speed, accuracy, confidence under pressure",
     skills: [
-      { tag: "tag-r", label: "Reading", content: "<strong>Speed reading without sacrificing accuracy.</strong> Target: 35+/40 consistently in 55 min (leaving 5 min for transfer/check). Technique: set a 17-min timer per passage. If you exceed it, practice skimming (topic sentences only) on next passage." },
-      { tag: "tag-w", label: "Writing", content: "<strong>Timed production under constraint.</strong> Task 1: 20 min. Task 2: 40 min. Both written in sequence without break (simulating full exam). Daily this week. Score at end of week must exceed 35/40 (Band 7+)." },
-      { tag: "tag-l", label: "Listening", content: "<strong>Full paper daily</strong>. Now compare your Section 4 score to Week 1 baseline. If still below 8/10: focus on academic lecture vocabulary and speed of processing. Slow down audio to 0.8x on first pass only." },
-      { tag: "tag-s", label: "Speaking", content: "<strong>Examiner simulation.</strong> Use a friend, tutor, or AI to conduct 3 full mock speaking interviews this week. After each: receive feedback on 4 criteria. Identify 1 criterion to improve per day." },
-      { tag: "tag-v", label: "Vocabulary", content: "Full Anki deck review. Target AWL coverage: all 570 headwords recognised and 300+ producible. Focus remaining review sessions on Sublist 4–10 (highest-frequency academic words across disciplines)." },
-      { tag: "tag-g", label: "Grammar", content: "Focus: <strong>punctuation and sentence boundaries.</strong> Common Band 7 errors: comma splices (joining independent clauses with a comma only), fragments, and run-ons. Daily drills: 20 error-correction sentences." }
+      { tag: "tag-r", label: "Reading", content: "<strong>Speed reading without sacrificing accuracy.</strong> Target: 35+/40 consistently in 55 min (leaving 5 min for transfer/check). Technique: set a phone timer; practise pacing across 3 passages." },
+      { tag: "tag-w", label: "Writing", content: "<strong>Timed production under constraint.</strong> Task 1: 20 min. Task 2: 40 min. Both written in sequence without break (simulating full exam). Daily: one full writing paper (80 min)." },
+      { tag: "tag-l", label: "Listening", content: "<strong>Full paper daily</strong>. Now compare your Section 4 score to Week 1 baseline. If still below 8/10: focus on academic lecture vocabulary and prediction strategy." },
+      { tag: "tag-s", label: "Speaking", content: "<strong>Examiner simulation.</strong> Use a friend, tutor, or AI to conduct 3 full mock speaking interviews this week. After each: receive feedback on the IELTS 9-band criteria." },
+      { tag: "tag-v", label: "Vocabulary", content: "Full Anki deck review. Target AWL coverage: all 570 headwords recognised and 300+ producible. Focus remaining review sessions on Sublist 4–10 (highest frequency in academic texts)." },
+      { tag: "tag-g", label: "Grammar", content: "Focus: <strong>punctuation and sentence boundaries.</strong> Common Band 7 errors: comma splices (joining independent clauses with a comma only), fragments (incomplete sentences), run-on sentences." }
     ]
   },
   {
     num: "Week 8", title: "Final Consolidation & Exit Diagnostic", theme: "Confirm readiness — trust your preparation",
     skills: [
-      { tag: "tag-r", label: "Reading", content: "<strong>3 full timed papers</strong> across the week using unused Cambridge volumes. Review errors once only — no more new strategy introduction. Aim: consistency in 36–38/40 range." },
-      { tag: "tag-w", label: "Writing", content: "<strong>Final 2 full Writing papers</strong> (Task 1 + Task 2) under exam conditions. One mid-week, one on Friday. Do not use any reference materials. Self-mark against Band 8 Descriptors. Achieve ≥7.5 on both." },
-      { tag: "tag-l", label: "Listening", content: "<strong>2 full papers</strong> plus Section 4 isolated practice. Final focus: transfer accuracy (answer sheet transcription errors cost marks at this level). Target 37–40/40." },
-      { tag: "tag-s", label: "Speaking", content: "Final mock: record a full 11–14 minute speaking test. Compare to your Week 1 baseline recording. Specific markers of Band 8 speaking: (1) minimal hesitation, (2) complex sentence structures, (3) sophisticated vocabulary, (4) clear pronunciation with natural prosody." },
-      { tag: "tag-v", label: "Vocabulary", content: "Final Anki review only — no new cards. Consolidation: produce a 200-word summary of each major IELTS topic area from memory using target academic vocabulary. If you can do this, you've achieved mastery." },
-      { tag: "tag-g", label: "Grammar", content: "Final grammar self-test: produce 30 sentences from prompts only (no model), covering all target structures from the course. Mark yourself against Cambridge Grammar descriptors. Aim: 28/30 accuracy." }
+      { tag: "tag-r", label: "Reading", content: "<strong>3 full timed papers</strong> across the week using unused Cambridge volumes. Review errors once only — no more new strategy introduction. Aim for consistency at 35+/40." },
+      { tag: "tag-w", label: "Writing", content: "<strong>Final 2 full Writing papers</strong> (Task 1 + Task 2) under exam conditions. One mid-week, one on Friday. Do not use any reference materials. Target Band 8 coherence and lexical sophistication." },
+      { tag: "tag-l", label: "Listening", content: "<strong>2 full papers</strong> plus Section 4 isolated practice. Final focus: transfer accuracy (answer sheet transcription errors cost marks at this stage)." },
+      { tag: "tag-s", label: "Speaking", content: "Final mock: record a full 11–14 minute speaking test. Compare to your Week 1 baseline recording. Specific markers of Band 8 speaking: (1) minimal hesitation, (2) sophisticated vocabulary, (3) natural connected speech." },
+      { tag: "tag-v", label: "Vocabulary", content: "Final Anki review only — no new cards. Consolidation: produce a 200-word summary of each major IELTS topic area from memory using target academic vocabulary." },
+      { tag: "tag-g", label: "Grammar", content: "Final grammar self-test: produce 30 sentences from prompts only (no model), covering all target structures from the course. Mark yourself against Cambridge descriptors." }
     ]
   }
 ];
@@ -420,7 +419,7 @@ weeks.forEach((week, i) => {
 
   const header = document.createElement('div');
   header.className = 'week-header';
-  header.innerHTML = `<span class="week-num">${week.num}</span><span class="week-title">${week.title}</span><span class="week-theme">${week.theme}</span><i class="ti ti-chevron-down week-chevron" style="font-size:18px;"></i>`;
+  header.innerHTML = `<span class="week-num">${week.num}</span><span class="week-title">${week.title}</span><span class="week-theme">${week.theme}</span><i class="ti ti-chevron-down week-chevron" style="font-size:20px;"></i>`;
 
   const body = document.createElement('div');
   body.className = 'week-body';
